@@ -34,7 +34,7 @@ function playRound(player, cpu){
         return 0;
     }
     if(player == 'rock' && cpu == 'scissors' ||
-    player == 'paper' && cpu == 'scissors' ||
+    player == 'paper' && cpu == 'rock' ||
     player == 'scissors' && cpu == 'paper')
         return 1;
 
