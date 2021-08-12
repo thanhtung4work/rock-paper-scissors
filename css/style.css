@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 body{
@@ -12,12 +13,15 @@ body{
 .p-1{
     padding: 1vh 1vw;
 }
+.p-2{
+    padding: 2vh 2vw;
+}
 .m-1{
     margin: 1vh 1vw;
 }
 
 /*TEXT*/
-.has-text-size-1 *{
+.has-text-size-1 {
     font-size: 2rem;
 }
 .has-text-centered{text-align: center;}
