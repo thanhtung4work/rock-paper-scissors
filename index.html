@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="stylesheet" href="css/style.css">
+
     <style>
         .btn{
             font-size: 20px;
@@ -14,56 +16,42 @@
         .btn:hover{
             transform: scale(1.1);
         }
-
-        .table{
-            width: 100%;
-            margin: 1vh 0;
-
-            border: 0;
-        }
-
-        .table * {
-            text-align: center;
-            font-size: 20px;
-        }
-
-        body{
-            width: 100%;
-            box-sizing: border-box;
-            padding: 0 0.5vw;
-            margin: 0;
-        }
-        @media only screen and (min-width: 768px) {
-            body{
-                width: 50%;
-                margin: auto;
-            }
-        }
+        
     </style>
 
 </head>
-<body>
+<body class='p-1'>
     <header>
         <h1>Welcome to the Rock Paper Scissors</h1>
         <p>The hardest game of all time</p>
     </header>
     <hr>
-    <table class='table'>
-        <tr>
-            <td>You</td>
-            <td>CPU</td>
-        </tr>
-        <tr>
-            <td id='out1'>?</td>
-            <td id='out2'>?</td>
-        </tr>
-    </table>
+
+    <div class="row has-text-size-1">
+        <div class="col-5 has-text-centered">
+            <p>You</p>
+            <p id="out1">?</p>
+        </div>
+        <div class="col-5 has-text-centered">
+            <p>CPU</p>
+            <p id="out2">?</p>
+        </div>
+    </div>
 
     <div>
         <p>The result is <span id='result'></span></p>
-        <button onclick="rock()" class='btn'>rock</button>
-        <button onclick="paper()" class='btn'>paper</button>
-        <button onclick="scissors()" class='btn'>scissors</button>
+        <div class="row">
+            <div class="col-2 p-1">
+                <button onclick="rock()" class='btn p-1'>rock</button>
+            </div>
+            <div class="col-2 p-1">
+                <button onclick="paper()" class='btn p-1'>paper</button>
+            </div>
+            <div class="col-2 p-1">
+                <button onclick="scissors()" class='btn p-1'>scissors</button>
+            </div>
+        </div>
+        
     </div>
 
     <script src="js/index.js"></script>
